@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8">
-	  	<title>Iniciar Sesión - IronGroup</title>
-	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+	<title>Iniciar Sesión - IronGroup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	  	<!-- Archivos CSS de Bootstrap y Perzonalizados --->
-  		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-  		<!--<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">-->
-  		<link href="assets/css/pace-theme-flat-top.css" rel="stylesheet"/>
-		<link href="assets/bootstrap/css/bootstrap-theme.css" rel="stylesheet"/>
-		<link rel="stylesheet" href="assets/bootstrap/css/floating-labels.css">
+	  <!-- Archivos CSS de Bootstrap y Perzonalizados --->
+  	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+  	<link href="assets/css/pace-theme-flat-top.css" rel="stylesheet"/>
+	<link href="assets/bootstrap/css/bootstrap-theme.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="assets/bootstrap/css/floating-labels.css">
+	<link rel="stylesheet" href="Assets/css/sweetalert2.css">
 
   		<!-- Scripts de Java Script --->
-  		<script src="assets/js/jquery-3.3.1.js"></script>
-  		<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
-  		<script src="assets/js/pace.js"></script>
-  		<!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  		<script src="assets/js/jquery-1.12.3.min.js" charset="utf-8"></script>
-  		-->
+  	<script src="assets/js/jquery-3.3.1.js"></script>
+  	<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+  	<script src="assets/js/pace.js"></script>
+  	<script src="Assets/js/sweetalert2.js"></script>
 
   		<!-- Iconos e Imagenes a utilizar --->
-  		<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"/>
-		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
-		
-		<!--<link rel="stylesheet" href="assets/css/estilo.css"  media="screen" title="no title" charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->	
+  	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>	
   </head>
 
   <body>
@@ -47,7 +43,7 @@
       	</div>
       
       	<div class="text-center mb-4">
-      		<input type="button" class="boton" id="login" name="login" value="Entrar"></input>
+      		<input type="button" class="btn btn-danger btn-lg" id="login" name="login" value="Entrar"></input>
       	</div>      	
     </form>
   </body>
@@ -63,7 +59,7 @@
 				$('#login').val("Conectando...");
 			}					
 			$.ajax({ 
-			url: "Logueame.php",
+			url: "Funciones/Logueame.php",
 			type:"POST", 
 			data:{
 				usuario:user,
@@ -74,11 +70,16 @@
 			{				
 				if (data=="1") 
 				{
-					$(location).attr('href','index.php');
+					swal({
+                		type: 'success',
+                		title: 'Excelente, Se ha logrado Loguear',
+                		showConfirmButton: false,
+                		timer: 1500})
+					//$(location).attr('href','index.php');
 				} 
 				else
 				{
-					alert("Contraseña Incorrecta."+ data);
+					swal('Error', 'No se ha podido iniciar sesion' + data, 'error');
 					$("#resultado").html("Contraseña Incorrecta.");
 					$('#login').val("Entrar");
 				}
