@@ -1,3 +1,9 @@
+@import url(http://allfont.es/allfont.css?fonts=futura-bold);
+
 body{
 	background-color: black; 
+}
+
+.SubTitulo{
+	color: white;
 }

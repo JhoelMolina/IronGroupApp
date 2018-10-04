@@ -29,7 +29,6 @@
 
     	<div class="text-center mb-4">
 			<a href="index.php"><img class="mb-4" src="assets/img/logo.png"/></a>
-			<div class="titulocomp">Iniciar Sesión</div>
 		</div>
       
     	<div class="form-label-group">
@@ -44,7 +43,9 @@
       
       	<div class="text-center mb-4">
       		<input type="button" class="btn btn-danger btn-lg" id="login" name="login" value="Entrar"></input>
-      	</div>      	
+      	</div>
+
+      	<div class="titulocomp" style="font-family: 'Futura-Bold'; color: white">Iniciar Sesión</div>      	
     </form>
   </body>
 </html>
