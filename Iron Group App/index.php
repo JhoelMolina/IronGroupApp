@@ -7,7 +7,7 @@
 
 	  <!-- Archivos CSS de Bootstrap y Perzonalizados --->
   	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-  	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/Estilo.css">
   	<link href="assets/css/pace-theme-flat-top.css" rel="stylesheet"/>
 	<link href="assets/bootstrap/css/bootstrap-theme.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="assets/bootstrap/css/floating-labels.css">
