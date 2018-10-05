@@ -4997,7 +4997,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color: #343a40 !important; }
+  background-color: black !important; }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -7607,7 +7607,7 @@ a.text-danger:hover, a.text-danger:focus {
   color: #f8f9fa !important; }
 
 a.text-light:hover, a.text-light:focus {
-  color: #dae0e5 !important; }
+  color: red !important; }
 
 .text-dark {
   color: #343a40 !important; }

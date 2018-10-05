@@ -1,30 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-	<title>Iniciar Sesión - IronGroup</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	  <!-- Archivos CSS de Bootstrap y Perzonalizados --->
-  	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-  	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
-  	<link href="assets/css/pace-theme-flat-top.css" rel="stylesheet"/>
-	<link href="assets/bootstrap/css/bootstrap-theme.css" rel="stylesheet"/>
-	<link rel="stylesheet" href="assets/bootstrap/css/floating-labels.css">
-	<link rel="stylesheet" href="Assets/css/sweetalert2.css">
-
-  		<!-- Scripts de Java Script --->
-  	<script src="assets/js/jquery-3.3.1.js"></script>
-  	<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
-  	<script src="assets/js/pace.js"></script>
-  	<script src="Assets/js/sweetalert2.js"></script>
-
-  		<!-- Iconos e Imagenes a utilizar --->
-  	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"/>
-	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>	
-  </head>
-
-  <body class="Fondo-Body">
+<?php 
+ include("Recursos/Cabecera.php"); ?>
+<body class="Fondo-Body">
 	<form class="form-signin" method="POST">
 
     	<div class="text-center mb-4">
@@ -45,10 +22,9 @@
       		<input type="button" class="btn btn-danger btn-lg" id="login" name="login" value="Entrar"></input>
       	</div>
 		
-		<h4 class="text-center SubTitulo" >Forjamos Atletas de Hierro</h4>     	
+		<h4 class="text-center SubTitulo" >FORJAMOS ATLETAS DE HIERRO</h4>     	
     </form>
-  </body>
-</html>
+    <?php include('Recursos/PieDePagina.php'); ?>
 
 <script>
 	$(document).ready(function(){

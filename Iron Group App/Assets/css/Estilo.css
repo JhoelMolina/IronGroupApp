@@ -4,6 +4,11 @@ body{
 	 background-color: black;
 }
 
+a:hover
+{
+	color: red;
+}
+
 .Fondo-Body{
 	background-image: url(../img/Portada_Iron.png);
 	background-size: cover;
@@ -15,4 +20,13 @@ body{
 .SubTitulo{
 	color: white;
 	
+}
+
+.Fondo-Carta{
+	background-color: #38393a;
+}
+
+.Icono-Nav{
+	width: 32px;
+	height: 32px;
 }

@@ -23,42 +23,7 @@
   </head>
 
   <body>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark border-bottom border-white" style="background-color: black;">
-        <div class="col-9">
-        <a href="index.php"><img src="assets/img/logo.png"width="130"height="70"/></a>
-        </div>
-        <div class="col-3 navbar-text">
-          <?php
-            session_start();
-            if(!isset($_SESSION["user"]))
-            {
-              echo '<a href="login.php"><button class="btn btn-dark rounded-circle"><img class="img-fluid" src="assets/img/l.png" alt="Responsive image" width="50" height="50"></button></a>';
-            }
-            else
-            {
-              echo 'Bienvenid@!<br> ' .$_SESSION["nombre"].' <br> <a href="logout.php">Cerrar Sesion</a>';
-            }
-          ?>
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg fixed-bottom border-top border-white" style="background-color: black;">
-        <ul class="nav">
-          <li>
-            <!--REVISAR LA SINTAXSIS DEL ELEMENTO a-->
-            <a href="index.php" class="btn btn-dark rounded-circle">
-              <img src="assets/img/h.png" width="40">
-            </a>
-          </li>
-          <?php 
-            if(isset($_SESSION["user"]))
-            {
-              echo '<li><a href="Reservas.php" class="btn btn-dark rounded-circle"><img src="assets/img/c.png"  width="40"></a></li>';
-              echo '<li><a href="Pruebas.php" class="btn btn-dark rounded-circle"><img src="assets/img/t.png" width="40"></a></li>';
-              echo '<li><a href="Perfil.php" class="btn btn-dark rounded-circle"><img src="assets/img/p.png" width="40"></a></li>';
-            }
-          ?>
-        </ul>
-      </nav>
+   <?php include("Recursos/BarraDeNavegacion.php"); ?>
      <form class="MisDatos">
         <div class="form-row justify-content-center">
           <div class="form-group col-md-2 mr-5">

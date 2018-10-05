@@ -9,6 +9,8 @@
  	<title>Reservas</title>
  </head>
  <body>
- 	
+ 	<?php
+ 	include("Recursos/BarraDeNavegacion.php") ;
+ 	 ?>
  </body>
  </html>
