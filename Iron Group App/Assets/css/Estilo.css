@@ -1,12 +1,18 @@
 @import url(http://allfont.es/allfont.css?fonts=futura-bold);
 
-body{ background-color: black; }
+body{
+	 background-color: black;
+}
 
-.SubTitulo{	color: white;}
+.Fondo-Body{
+	background-image: url(../img/Portada_Iron.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
-.MisDatos{
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
+.SubTitulo{
+	color: white;
+	
 }

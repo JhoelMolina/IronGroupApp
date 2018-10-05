@@ -7,7 +7,7 @@
 
 	  <!-- Archivos CSS de Bootstrap y Perzonalizados --->
   	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-  	<link rel="stylesheet" type="text/css" href="assets/css/Estilo.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
   	<link href="assets/css/pace-theme-flat-top.css" rel="stylesheet"/>
 	<link href="assets/bootstrap/css/bootstrap-theme.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="assets/bootstrap/css/floating-labels.css">
@@ -24,7 +24,7 @@
 	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>	
   </head>
 
-  <body>
+  <body class="Fondo-Body">
 	<form class="form-signin" method="POST">
 
     	<div class="text-center mb-4">
@@ -44,8 +44,8 @@
       	<div class="text-center mb-4">
       		<input type="button" class="btn btn-danger btn-lg" id="login" name="login" value="Entrar"></input>
       	</div>
-
-      	<div class="titulocomp" style="font-family: 'Futura-Bold'; color: white">Iniciar Sesión</div>      	
+		
+		<h4 class="text-center SubTitulo" >Forjamos Atletas de Hierro</h4>     	
     </form>
   </body>
 </html>
