@@ -1,6 +1,4 @@
-
-<?php 
- include("Recursos/Cabecera.php"); ?>
+<?php include("Recursos/Cabecera.php"); ?>
 <body class="Fondo-Body">
 	<form class="form-signin" method="POST">
 
@@ -24,7 +22,7 @@
 		
 		<h4 class="text-center SubTitulo" >FORJAMOS ATLETAS DE HIERRO</h4>     	
     </form>
-    <?php include('Recursos/PieDePagina.php'); ?>
+<?php include('Recursos/PieDePagina.php'); ?>
 
 <script>
 	$(document).ready(function(){

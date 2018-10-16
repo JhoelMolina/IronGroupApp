@@ -14,7 +14,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="Reservas.php">
 							<img src="Assets/img/bicicleta.png" class="d-inline-block Icono-Nav" alt="Responsive image">
 							Reservas
 						</a>

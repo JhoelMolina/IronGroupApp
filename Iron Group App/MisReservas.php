@@ -1,9 +1,9 @@
-<?php include("Recursos/Cabecera.php")?>
+<?php include("Recursos/Cabecera.php");?>
 <body>
 <?php include("Recursos/BarraDeNavegacion.php");?>
-	
-	<div class="container-fluid">
-		<div class="row justify-content-center">
+
+<div class="container-fluid">
+	<div class="row justify-content-center">
 			<!--Elementos del carousel-->
 			<div id="carouselDias" class="carousel slide pl-3 pr-3" data-ride="carousel">
 				<div class="carousel-inner">
@@ -87,9 +87,9 @@
 				<span class="sr-only">Next</span>
 			</a>
 			</div>
-		</div>
+	</div>
 
-		<ul class="list-group mt-4">
+	<ul class="list-group mt-4">
 			<li class="list-group-item Fondo-Carta">
 				<div class="row">
 					<h1 class="text-light">Hora</h1>
@@ -101,7 +101,7 @@
 							<div class="col">
 								<div class="row justify-content-end">
 									<button class="btn rounded mr-3" style="height: 40px; width: 40px" data-toggle="modal" data-target="#modalDescripcion"></button>
-									<button class="btn btn-dark" data-toggle="modal" data-target="#modalBotonera">Reservar</button>
+									<button class="btn btn-dark" data-toggle="modal" data-target="#modalBotonera">Liberar</button>
 								</div>
 							</div>
 						</div>
@@ -112,8 +112,8 @@
 			</li>
 		</ul>
 
-		<!--Modal de la Descripcion-->
-		<div class="modal fade" id="modalDescripcion" tabindex="1" role="dialog" arial-labelledby="labelDescripcion" aria-hidden="true">
+	<!--Modal de la Descripcion-->
+	<div class="modal fade" id="modalDescripcion" tabindex="1" role="dialog" arial-labelledby="labelDescripcion" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -130,43 +130,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<!--Modal de la Botonera-->
-		<div class="modal fade" id="modalBotonera" tabindex="1" role="dialog" arial-labelledby="labelBotonera" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title SubTitulo" id="modalBotonera">Escoga su Puesto</h5>
-					</div>
-					<div class="modal-body">
-						<div class="row justify-content-around" style="margin-left: 111px">
-                    		<button class="btn btn-lg Btn-Modal rounded"></button>
-                    		<button class="btn btn-lg Btn-Modal rounded"></button>
-                    		<button class="btn btn-lg Btn-Modal rounded"></button>
-                		</div>
-                		<div class="row justify-content-around mt-4">
-                    		<button class="btn Btn-Modal rounded"></button>
-                    		<button class="btn Btn-Modal rounded"></button>
-                    		<button class="btn Btn-Modal rounded"></button>
-                		</div>
-                		<div class="row justify-content-around mt-4">
-                    		<button class="btn Btn-Modal rounded"></button>
-                    		<button class="btn Btn-Modal rounded"></button>
-                    		<button class="btn Btn-Modal rounded"></button>
-                		</div>
-                		<div class="row justify-content-around mt-4" style="margin-left: 111px">
-                    		<button class="btn Btn-Modal rounded"></button>
-                    		<button class="btn Btn-Modal rounded"></button>
-                    		<button class="btn Btn-Modal rounded"></button>
-                		</div>
-					</div>
-					<div class="modal-footer">
-						<button class="btn-light rounded" data-dismiss="modal">Aplicar</button>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
+</div>
 
-<?php include("Recursos/PieDePagina.php"); ?>
+<?php include("Recursos/PieDePagina.php");?>

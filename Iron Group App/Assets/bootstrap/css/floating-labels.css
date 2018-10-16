@@ -11,7 +11,7 @@ body {
   margin: auto;
 }
 
-@media screen and (min-height: 813px)  {
+@media screen and (min-height: 1025px)  {
  body {
     display: -ms-flexbox;
     display: flex;

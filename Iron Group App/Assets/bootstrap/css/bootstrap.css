@@ -2136,8 +2136,6 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     .btn {
       -webkit-transition: none;
       transition: none; } }
-  .btn:hover, .btn:focus {
-    text-decoration: none; }
   .btn.disabled, .btn:disabled {
     opacity: 0.65; }
   .btn:not(:disabled):not(.disabled) {
@@ -2310,7 +2308,7 @@ fieldset:disabled a.btn {
   .btn-dark:hover {
     color: #fff;
     background-color:rgb(254,000,000);
-    border-color: #1d2124; }
+    border-color: red; }
   .btn-dark:focus, .btn-dark.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
@@ -4422,7 +4420,7 @@ button.close {
           flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: red;
+  background-color: #38393a;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -4832,7 +4830,6 @@ button.close {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 15%;
   color: #fff;
   text-align: center;
   opacity: 0.5; }
@@ -5068,7 +5065,7 @@ button.bg-dark:focus {
   border-color: #fff !important; }
 
 .rounded {
-  border-radius: 0.25rem !important; }
+  border-radius: 50px; }
 
 .rounded-top {
   border-top-left-radius: 0.25rem !important;
